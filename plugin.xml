@@ -35,14 +35,14 @@
         <source-file src="src/ios/CDVBarcodeScanner.mm" compiler-flags="-fno-objc-arc" />
         <source-file src="src/ios/zxing-all-in-one.cpp" />
 
-        <lib-file src="libiconv.dylib" />
-        <lib-file src="AVFoundation.framework" />
-        <lib-file src="AssetsLibrary.framework" />
-        <lib-file src="CoreVideo.framework" />
-        <lib-file src="QuartzCore.framework" />
-        <lib-file src="CoreGraphics.framework" />
-        <lib-file src="CoreImage.framework" />
-        <lib-file src="AudioToolbox.framework" />
+        <framework src="libiconv.dylib" />
+        <framework src="AVFoundation.framework" />
+        <framework src="AssetsLibrary.framework" />
+        <framework src="CoreVideo.framework" />
+        <framework src="QuartzCore.framework" />
+        <framework src="CoreGraphics.framework" />
+        <framework src="CoreImage.framework" />
+        <framework src="AudioToolbox.framework" />
     </platform>
 
     <!-- android -->
@@ -298,7 +298,7 @@
             <DeviceCapability Name="webcam" />
         </config-file>
 
-        <lib-file src="src/windows/lib/WinRTBarcodeReader.csproj" custom="true" type="projectReference"/>
+        <framework src="src/windows/lib/WinRTBarcodeReader.csproj" custom="true" type="projectReference"/>
     </platform>
 
     <platform name="windows">
@@ -310,7 +310,7 @@
             <DeviceCapability Name="webcam" />
         </config-file>
 
-        <lib-file src="src/windows/lib/WinRTBarcodeReader.csproj" custom="true" type="projectReference"/>
+        <framework src="src/windows/lib/WinRTBarcodeReader.csproj" custom="true" type="projectReference"/>
     </platform>
 
     <!-- Windows Phone 8 -->
@@ -325,7 +325,7 @@
             <Capability Name="ID_CAP_ISV_CAMERA" />
         </config-file>
 
-        <lib-file src="src/wp8/lib/zxing.wp8.0.dll" custom="true" />
+        <framework src="src/wp8/lib/zxing.wp8.0.dll" custom="true" />
 
         <asset src="src/wp8/assets/cancel.png" target="Images/appbar.cancel.png" />
 
